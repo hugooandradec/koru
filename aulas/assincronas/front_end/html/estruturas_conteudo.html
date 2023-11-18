@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tags de estrutura para o conteúdo</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!-- DIV (sem semântica) -->
+    <div>
+        <p></p>
+        <img src="" alt="">
+    </div>
+
+    <!-- Tags com semânticas -->
+    <header> <!-- Seção para cabeçalho -->
+        <nav> <!-- Seção de navegação -->
+            <ul>
+                <li><a href="">Pagina 1</a></li>
+                <li><a href="">Pagina 2</a></li>
+                <li><a href="">Pagina 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contato"> <!-- seção de conteúdo -->
+        <h1>Formulário de contato</h1>
+
+        <form action="pagina_destino.php" target="_blank">
+
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="aceite">Aceito receber notificações</label>
+                <input type="checkbox" id="aceite">
+            </div>
+            <div>
+                <input type="radio" name="linguagem" id="html" value="html"><label for="html">HTML</label>
+                <input type="radio" name="linguagem" id="css" value="css"><label for="css">CSS</label>
+                <input type="radio" name="linguagem" id="javascript" value="javascript"><label
+                    for="javascript">JavaScript</label>
+            </div>
+            <div>
+                <label for="comentario">Comentário: </label>
+                <textarea name="" id="comentario" cols="30" rows="10">
+
+                </textarea>
+            </div>
+
+            <div>
+                <label for="bebida">Bebida: </label>
+                <select id="bebida">
+                    <option value="cha">Chá</option>
+                    <option value="achocolatado">Achocolatado</option>
+                    <option value="cafe">Café</option>
+                </select>
+            </div>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+    <article> <!-- seção para conteúdo independente -->
+
+    </article>
+    <footer> <!-- seção para rodapé -->
+
+    </footer>
+</body>
+
+</html>
