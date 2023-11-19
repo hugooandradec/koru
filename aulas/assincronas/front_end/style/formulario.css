@@ -1,0 +1,55 @@
+#contato {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #de9595;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.campo {
+    padding-top: 24px;
+    margin: 10px;
+}
+
+.campo label {
+    display: block;
+    padding-bottom: 8px;
+}
+
+.campo input + label, .campo label[for="bebida"] {
+    display: inline;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+/* pseudos em ação */
+
+input:focus, textarea:focus {
+    color: blueviolet;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(97, 17, 172);
+    cursor: pointer;
+}
+
+/* pseudo elementos */
+
+label[for="nome"]::after, label[for="email"]::after {
+    content: "*";
+    color: blueviolet;
+}
